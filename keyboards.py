@@ -21,6 +21,7 @@ kb = ReplyKeyboardMarkup(resize_keyboard=True)
 start_button = KeyboardButton(text="Информация")
 calc_button = KeyboardButton(text='Рассчитать')
 buy_button = KeyboardButton(text='Купить')
+reg_button = KeyboardButton(text='Регистрация')
 
 kb.row(start_button, calc_button)
-kb.add(buy_button)
+kb.row(buy_button, reg_button)
